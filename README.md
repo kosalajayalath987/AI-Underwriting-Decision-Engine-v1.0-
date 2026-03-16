@@ -1,8 +1,9 @@
-🛡️ AI Underwriting Decision Engine (v1.0)
+## 🛡️ AI Underwriting Decision Engine (v1.0)
 
 An intelligent risk assessment system designed to automate insurance underwriting by predicting risk classes based on historical health, lifestyle, and financial data. This project utilizes a hybrid approach of Random Forest Classification and Regression to optimize decision accuracy.
 
-🚀 Key Features
+## 🚀 Key Features
+
 Multi-Model Architecture: Uses both Classification (for discrete labeling) and Regression (for granular risk scoring).
 
 Risk Class Mapping: Transforms categorical underwriting outcomes (Preferred, Standard, Substandard, Declined) into ordinal numeric values (0–3) for mathematical optimization.
@@ -11,7 +12,8 @@ Hyperparameter Tuning: Implements GridSearchCV to minimize Mean Squared Error (M
 
 Data Auditability: Includes a Confusion Heat Map to compare AI predictions against historical human underwriting decisions.
 
-🛠️ Technical Stack
+## 🛠️ Technical Stack
+
 Language: Python
 
 Data Analysis: Pandas, NumPy
@@ -20,7 +22,8 @@ Machine Learning: Scikit-Learn (Random Forest, StandardScaler, GridSearchCV)
 
 Visualization: Matplotlib, Seaborn
 
-🚀 Key Technical Enhancements
+## 🚀 Key Technical Enhancements
+
 GridSearchCV Optimization: Replaced manual parameter selection with a cross-validated grid search to find the optimal max_depth and n_estimators.
 
 MSE-Driven Regression: Utilizes a Random Forest Regressor to treat risk classes as an ordinal scale (0-3), allowing the model to minimize the "distance" between incorrect predictions.
@@ -29,7 +32,8 @@ Automated Audit Pipeline: A custom Python routine that automatically generates a
 
 Feature Scaling: Implemented StandardScaler to normalize input features, ensuring unbiased weight distribution across the 12 input columns.
 
-📊 Performance & Visualization
+## 📊 Performance & Visualization
+
 The model evaluates itself through three primary lenses:
 
 1. AI Accuracy Audit (Confusion Matrix)
@@ -42,7 +46,8 @@ By analyzing the entropy reduction in the Random Forest, we identify which of th
 The heatmap reveals the mathematical relationship between input features and the target risk score. This confirms the "Logic Behind the 12 Columns"—ensuring health indicators correlate correctly with risk.
 
 
-📈 Model Performance Metrics
+## 📈 Model Performance Metrics
+
 Baseline Accuracy: (Insert your % here)%
 
 Target MSE: < 1.0 (Achieved through GridSearchCV)
