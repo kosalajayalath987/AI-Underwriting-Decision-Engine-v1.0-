@@ -1,4 +1,5 @@
 🛡️ AI Underwriting Decision Engine (v1.0)
+
 An intelligent risk assessment system designed to automate insurance underwriting by predicting risk classes based on historical health, lifestyle, and financial data. This project utilizes a hybrid approach of Random Forest Classification and Regression to optimize decision accuracy.
 
 🚀 Key Features
